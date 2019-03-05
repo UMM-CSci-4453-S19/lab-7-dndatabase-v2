@@ -6,7 +6,7 @@ var using = Promise.using;
 Promise.promisifyAll(require("mysql/lib/Connection").prototype);
 Promise.promisifyAll(require("mysql/lib/Pool").prototype);
 
-credentials.host="ids"
+credentials.host = "ids"
 var connection = mysql.createConnection(credentials);
 
 var pool=mysql.createPool(credentials); //Setup the pool using our credentials.
